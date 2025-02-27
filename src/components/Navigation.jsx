@@ -9,12 +9,12 @@ function Navigation() {
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+      <Container className='fixed-top bg-body-tertiary'>
         <Navbar.Brand href="/">
             <Image src={logo} alt="Shortly" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='m-2 mt-2' />
+        <Navbar.Collapse id="basic-navbar-nav" className="bg-body-tertiary" >
           <Nav className="me-auto">
             <Nav.Link href="/features">Features</Nav.Link>
             <Nav.Link href="/pricing">Pricing</Nav.Link>
